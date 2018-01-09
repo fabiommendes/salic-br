@@ -1,0 +1,28 @@
+engines:
+
+  phpcodesniffer:
+    enabled: true
+
+  duplication:
+    enabled: false
+    config:
+      languages:
+        - "php"
+
+  phan:
+    enabled: true
+    config:
+      file_extensions: "php"
+
+  phpmd:
+    enabled: true
+
+  shellcheck:
+    enabled: true
+
+ratings:
+  paths:
+  - application/**.php
+  - tests/**.php
+  - library/MinC/**.php
+  - library/WebServiceRF/**.php
